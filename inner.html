@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Каталог - Интернет-магазин Device</title>
   </head>
   <body>
@@ -59,23 +60,23 @@
               <legend class="filters-name">Цвет</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="filters-checkbox" type="checkbox" name="black" id="black" checked>
+                    <input class="filters-checkbox" type="checkbox" name="black" checked>
                     Черный
                   </li>
                   <li class="filter-option">
-                    <input class="filters-checkbox" type="checkbox" name="white" id="white">
+                    <input class="filters-checkbox" type="checkbox" name="white">
                     Белый
                   </li>
                   <li class="filter-option">
-                    <input class="filters-checkbox" type="checkbox" name="blue" id="blue" checked>
+                    <input class="filters-checkbox" type="checkbox" name="blue" checked>
                     Синий
                   </li>
                   <li class="filter-option">
-                    <input class="filters-checkbox" type="checkbox" name="red" id="red" checked>
+                    <input class="filters-checkbox" type="checkbox" name="red" checked>
                     Красный
                   </li>
                   <li class="filter-option">
-                    <input class="filters-checkbox" type="checkbox" name="pink" id="pink">
+                    <input class="filters-checkbox" type="checkbox" name="pink">
                     Розовый
                   </li>
                 </ul>
@@ -104,56 +105,58 @@
           </div>
         </div>
         <h2 class="visually-hidden">Каталог товароов</h2>
-          <div class="product-item">
-            <div class="product-thumbnail">
-              <img src="http://placehold.it/320x340" width="320" height="340" alt="Любительская селфи-палка">
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <div class="item-buy">
+                    <a class="btn" href="#">В корзину</a>
+                    <a class="compare" href="#">Добавить к сравнению</a>
+                  </div>
+                </div>
+                <div class="product-content">
+                  <h2><a class="item-name" href="#">Любительская селфи-палка</a></h2>
+                  <span>500 руб.</span>
+                </div>
+            </div>
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <div class="item-buy">
                   <a class="btn" href="#">В корзину</a>
                   <a class="compare" href="#">Добавить к сравнению</a>
                 </div>
               </div>
               <div class="product-content">
-                <h2><a class="item-name" href="#">Любительская селфи-палка</a></h2>
-                <span>500 руб.</span>
-              </div>
-          </div>
-          <div class="product-item">
-            <div class="product-thumbnail">
-              <img src="http://placehold.it/320x340" width="320" height="340" alt="Профессиональная селфи-палка">
-              <div class="item-buy">
-                <a class="btn" href="#">В корзину</a>
-                <a class="compare" href="#">Добавить к сравнению</a>
+                <h2><a class="item-name" href="#">Профессиональная<br> селфи-палка</a></h2>
+                <span>1 500 руб.</span>
               </div>
             </div>
-            <div class="product-content">
-              <h2><a class="item-name" href="#">Профессиональная<br> селфи-палка</a></h2>
-              <span>1 500 руб.</span>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="product-thumbnail">
-              <img src="http://placehold.it/320x340" width="320" height="340" alt="Непотопляемая селфи-палка">
-              <div class="item-buy">
-                <a class="btn" href="#">В корзину</a>
-                <a class="compare" href="#">Добавить к сравнению</a>
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <div class="item-buy">
+                  <a class="btn" href="#">В корзину</a>
+                  <a class="compare" href="#">Добавить к сравнению</a>
+                </div>
+              </div>
+              <div class="product-content">
+                <h2><a class="item-name" href="#">Непотопляемая селфи-палка</a></h2>
+                <span>2 500 руб.</span>
               </div>
             </div>
-            <div class="product-content">
-              <h2><a class="item-name" href="#">Непотопляемая селфи-палка</a></h2>
-              <span>2 500 руб.</span>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="product-thumbnail">
-              <img src="http://placehold.it/320x340" width="320" height="340" alt="Селфи-палка «Следуй за мной»">
-              <div class="item-buy">
-                <a class="btn" href="#">В корзину</a>
-                <a class="compare" href="#">Добавить к сравнению</a>
+            <div class="product-item">
+              <div class="product-thumbnail">
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <div class="item-buy">
+                  <a class="btn" href="#">В корзину</a>
+                  <a class="compare" href="#">Добавить к сравнению</a>
+                </div>
               </div>
-            </div>
-            <div class="product-content">
-              <h2><a class="item-name" href="#">Селфи-палка<br> «Следуй за мной»</a></h2>
-              <span>4 900 руб.</span>
+              <div class="product-content">
+                <h2><a class="item-name" href="#">Селфи-палка<br> «Следуй за мной»</a></h2>
+                <span>4 900 руб.</span>
+              </div>
             </div>
           </div>
           <ul class="pagination-list">
@@ -170,9 +173,9 @@
         <a class="footer-logo">
           DEVICE
         </a>
-        <p>
-          <address>г. Москва, ул. Строителей, 15</address>
-        </p>
+        <address>
+          г. Москва, ул. Строителей, 15
+        </address>
       </div>
       <div class="footer-center">
         <ul class="footer-navigation-links">
@@ -192,12 +195,12 @@
           <li><a class="footer-сompare" href="#">Сравнить</a></li>
           <li><a class="footer-cart" href="#">Корзина</a></li>
         </ul>
-        <div class="phone">
+        <p class="phone">
           <a href="tel:7-495-95-95">Тел.: +7 (495) 495-95-95</a>
-        </div>
+        </p>
         <div class="copyright">
           <a href="https://htmlacademy.ru">
-            <img src="http://placehold.it/40x40" width="40" height="40" alt="HTML Academy">
+            <img src="img/logo-html.svg" width="40" height="40" alt="HTML Academy">
           </a>
         </div>
       </div>

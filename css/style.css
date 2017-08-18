@@ -1,0 +1,39 @@
+body {
+  font-size: 15px;
+  line-height: 30px;
+  color: black;
+  font-weight: normal;
+  font-family: Open Sans;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+h1  {
+  font-size: 47px;
+}
+
+h2 {
+  font-family: Gilroy;
+  font-size: 47px;
+  line-height: 56px;
+  color: black;
+  font-weight: bold;
+}
+
+.sidebar h2 {
+  font-family: Gilroy;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+.filters-sort h2 {
+  font-family: Gilroy;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
