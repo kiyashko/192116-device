@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <title>Каталог - Интернет-магазин Device</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html" class="main-header-logo">
+      <a class="main-header-logo">
         Device
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="search-form-input" type="search" name="search" placeholder="Поиск по сайту" id="search">
+        <input class="search-button" type="submit" value="Найти">
         <label class="visually-hidden" for="search">Поиск по сайту</label>
       </form>
       <div class="user-navigation">
@@ -24,14 +26,14 @@
         <h2 class="visually-hidden">Навигация по сайту</h2>
           <ul class="site-navigation">
             <li class="site-catalog">
-              <a class="all-catalog-links" href="catalog.html">Каталог товаров</a>
+              <a class="all-catalog-links site-navigation-link" href="catalog.html">Каталог товаров</a>
                 <ul class="catalog-links">
-                  <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
-                  <li class="site-navigation-current"><a href="selfie-monopod.html">Моноподы для селфи</a></li>
-                  <li><a href="action-camera.html">Экшн-камеры</a></li>
-                  <li><a href="fitness-bracelet.html">Фитнесс-браслеты</a></li>
-                  <li><a href="smart-clock.html">Умные часы</a></li>
-                  <li><a href="quadrupter.html">Квадрокоптеры</a></li>
+                  <li class="catalog-link"><a href="virtual-reality.html">Виртуальная реальность</a></li>
+                  <li class="catalog-link"><a href="selfie-monopod.html">Моноподы для селфи</a></li>
+                  <li class="catalog-link"><a href="action-camera.html">Экшн-камеры</a></li>
+                  <li class="catalog-link"><a href="fitness-bracelet.html">Фитнесс-браслеты</a></li>
+                  <li class="catalog-link"><a href="smart-clock.html">Умные часы</a></li>
+                  <li class="catalog-link"><a href="quadrupter.html">Квадрокоптеры</a></li>
                 </ul>
             </li>
             <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
@@ -59,7 +61,7 @@
             </fieldset>
             <fieldset>
               <legend class="filters-name">Цвет</legend>
-                <ul>
+                <ul class="filter-options">
                   <li class="filter-option">
                     <input class="filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
                     <label for="filter-black">Черный</label>
@@ -82,27 +84,31 @@
                   </li>
                 </ul>
             </fieldset>
-              <fieldset>
-                <legend class="filters-name">Bluetooth</legend>
-                <input class="filters-radio" type="radio" value="Есть" name="bluetooth" id="bt-yes" checked>
-                <label for="bt-yes">Есть</label>
-                <input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bt-no">
-                <label for="bt-no">Нет</label>
-              </fieldset>
-              <button class="btn" type="submit">Показать</button>
+            <fieldset>
+              <legend class="filters-name">Bluetooth</legend>
+              <input class="filters-radio" type="radio" value="Есть" name="bluetooth" id="bt-yes" checked>
+              <label for="bt-yes">Есть</label>
+              <input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bt-no">
+              <label for="bt-no">Нет</label>
+            </fieldset>
+            <button class="btn" type="submit">Показать</button>
           </form>
       </section>
       <section class="content">
         <div class="filters-sort">
           <h2>Сортировка:</h2>
           <div class="filters-up-down">
-             <button class="btn-up" href="#">up</button>
-             <button class="btn-down current">down</button>
+             <a class="btn-up" href="#">
+               <img src="img/btn-up.svg">
+             </a>
+             <a class="btn-down current">
+               <img src="img/btn-down.svg">
+             </a>
           </div>
           <div class="filters-type">
-             <button class="current">По цене</button>
-             <button href="#">По типу</button>
-             <button href="#">По популярности</button>
+             <a class="current">По цене</a>
+             <a href="#">По типу</a>
+             <a href="#">По популярности</a>
           </div>
         </div>
         <h2 class="visually-hidden">Каталог товароов</h2>
@@ -163,39 +169,39 @@
           <h2 class="visually-hidden">Пагинация</h2>
             <ul class="pagination-list">
               <li><a class="pagination-back" href="#">Назад</a></li>
-              <li><a class="current">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
+              <li><a class="pagination-page current">1</a></li>
+              <li><a class="pagination-page" href="#">2</a></li>
+              <li><a class="pagination-page" href="#">3</a></li>
               <li><a class="pagination-next" href="#">Вперед</a></li>
             </ul>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-left">
-        <a href="index.html" class="footer-logo">
+        <a class="footer-logo">
           DEVICE
         </a>
         <address>
-          г. Москва, ул. Строителей, 15
+            г. Москва, ул. Строителей, 15
         </address>
       </div>
       <div class="footer-center">
         <ul class="footer-navigation-links">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="footer-navigation-link"><a href="delivery.html">Доставка</a></li>
+          <li class="footer-navigation-link"><a href="guarantee.html">Гарантия</a></li>
+          <li class="footer-navigation-link"><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="footer-social">
-          <li><a class="footer-social-fb" href="https://www.facebook.com">Фейсбук</a></li>
-          <li><a class="footer-social-instagram" href="https://www.instagram.com">Инстаграм</a></li>
-          <li><a class="footer-social-twitter" href="https://twitter.com">Твиттер</a></li>
+          <li><a class="social-btn footer-social-fb" href="https://www.facebook.com">Фейсбук</a></li>
+          <li><a class="social-btn footer-social-vk" href="https://www.vk.com">Инстаграм</a></li>
+          <li><a class="social-btn footer-social-twitter" href="https://twitter.com">Твиттер</a></li>
         </ul>
       </div>
       <div class="footer-right">
         <ul class="footer-user-navigation">
-          <li><a class="footer-login-link" href="#">Выйти</a></li>
-          <li><a class="footer-сompare" href="#">Сравнить</a></li>
-          <li><a class="footer-cart" href="#">Корзина</a></li>
+          <li><a class="footer-user footer-login-link" href="#">Войти</a></li>
+          <li><a class="footer-user footer-сompare" href="#">Сравнить</a></li>
+          <li><a class="footer-user footer-cart" href="#">Корзина</a></li>
         </ul>
         <p class="phone">
           <a href="tel:7-495-95-95">Тел.: +7 (495) 495-95-95</a>
