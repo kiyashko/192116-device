@@ -63,10 +63,17 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.search-form input[type="search"] {
+.search-form-input {
   font: inherit;
   background-color: #f7e296;
   border: none;
@@ -75,27 +82,27 @@ body {
   opacity:0.3;
 }
 
-.search-form input[type=search]:hover {
+.search-form-input:hover {
   opacity:0.6;
 }
 
-.search-form input[type=search]:focus {
+.search-form-input:focus {
   border-bottom: 2px solid #000000;
   opacity: 1;
 }
 
-.search-form input[type=submit] {
-  display: none;
+.search-form-button {
+  visibility: hidden;
   background-color: #f7e296;
   border: 2px solid #000000;
 }
 
-.search-form input[type=submit]:hover {
+.search-form-button:hover {
   color: #fff;
   background-color: #000000;
 }
 
-.search-form input[type=submit]:active {
+.search-form-button:active {
   color:rgba(255,255,255,.3);
 }
 
@@ -135,7 +142,7 @@ body {
 }
 
 .catalog-links {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light","Arial",sans-serif;
   list-style: none;
   font-size: 15px;
   text-transform: none;
@@ -160,16 +167,16 @@ body {
 
 .btn {
   display: inline-block;
+  width: 220px;
+  height: 40px;
   font-size: 18px;
   font-family: "Gilroy ExtraBold";
   color: #000000;
+  background-color: #f0c52e;
   text-decoration: none;
   text-align: center;
-  width: 220px;
-  height: 40px;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  background-color: #f0c52e;
 }
 
 .slider-feature-value {
@@ -192,10 +199,13 @@ body {
   line-height: 22px;
   vertical-align: top;
   color: #000000;
+
+  text-align: center;
+}
+.popular-link img {
   width: 160px;
   height: 160px;
   background-color: #f7e296;
-  text-align: center;
 }
 
 .popular-link a {
@@ -243,6 +253,18 @@ body {
   list-style: none;
 }
 
+.brands-list li {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.brands-list li:hover {
+  filter: none;
+  opacity: 1;
+}
+
+
 .about-us h2,
 .contacts h2 {
   font-family: "Gilroy ExtraBold";
@@ -251,6 +273,9 @@ body {
 
 .about-us li {
   list-style: none;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
   font-family: "Gilroy ExtraBold";
 }
 
@@ -258,6 +283,7 @@ body {
   list-style: none;
   font-size: 14px;
   opacity: 0.3;
+  color: #000000;
 }
 
 .breadcrumbs a {
@@ -312,7 +338,7 @@ fieldset {
 }
 
 .filters-type a {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light","Arial",sans-serif;
   font-size: 14px;
   text-decoration: none;
   opacity: 0.3;
@@ -331,7 +357,7 @@ fieldset {
 }
 
 .compare {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light","Arial",sans-serif;
   font-size: 13px;
   text-decoration: none;
   opacity: 0.5;
@@ -446,8 +472,8 @@ address {
   background-image: url(../img/fb.svg);
 }
 
-.footer-social-vk {
-  background-image: url(../img/vk.svg);
+.footer-social-in {
+  background-image: url(../img/in.png);
 }
 
 .footer-social-twitter {
@@ -459,6 +485,18 @@ address {
 }
 
 .social-btn:active {
+  opacity: 0.1;
+}
+
+.footer-social-in {
+  opacity: 0.6;
+}
+
+.footer-social-in:hover {
+  opacity: 0.9;
+}
+
+.footer-social-in:active {
   opacity: 0.1;
 }
 
@@ -490,11 +528,11 @@ address {
   text-decoration: none;
 }
 
-.copyright:hover {
+.copyright a:hover {
   opacity: 0.6;
 }
 
-.copyright:active {
+.copyright a:active {
   opacity: 0.3;
 }
 
@@ -512,10 +550,9 @@ address {
     margin-top: 13px;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans";
+    font-family: "Open Sans Light","Arial",sans-serif;
     background-color: #f2f2f2;
     border: none;
-    outline: none;
 }
 
 .modal-close {
