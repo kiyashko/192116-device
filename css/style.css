@@ -35,7 +35,7 @@ body {
   line-height: 30px;
   color: black;
   font-weight: normal;
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light","Arial",sans-serif;
 }
 
 .main-header {
@@ -75,6 +75,8 @@ body {
 
 .search-form-input {
   font: inherit;
+  height: 49px;
+  width: 355px;
   background-color: #f7e296;
   border: none;
   border-top: 2px solid transparent;
@@ -93,8 +95,27 @@ body {
 
 .search-form-button {
   visibility: hidden;
+  width: 85px;
+  min-height: 49px;
+  margin-left: -4px;
+  font-size: 15px;
+  padding: 10px;
   background-color: #f7e296;
   border: 2px solid #000000;
+}
+
+.search-form-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-form-button:active {
+  visibility: visible;
+  color: rgba(255,255,255,.3);
+}
+
+.search-form-input:focus + .search-form-button {
+  visibility: visible;
 }
 
 .user-navigation a {
@@ -244,15 +265,21 @@ body {
   list-style: none;
 }
 
-.brands-list img {
+.brands-list a {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   opacity: 0.2;
 }
 
-.brands-list img:hover {
+.brands-list a:hover {
   filter: none;
   opacity: 1;
+}
+
+.brands-list a:focus {
+  filter: none;
+  opacity: 1;
+  outline: none;
 }
 
 
