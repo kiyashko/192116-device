@@ -30,6 +30,10 @@
        url(../fonts/opensanslight.woff2) format("woff2")
 }
 
+html {
+	box-sizing: border-box;
+}
+
 body {
   font-size: 15px;
   line-height: 30px;
@@ -38,11 +42,34 @@ body {
   font-family: "Open Sans Light","Arial",sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* header */
+
 .main-header {
+  margin: 0 auto;
+  width: 1160px;
   background-color: #f7e296;
 }
 
+.main-header-container {
+  padding-left: 60px;
+  padding-top: 50px;
+  margin-top: 40px;
+}
+
 .main-header-logo {
+  position: absolute;
+  top: 25px;
   font-family: "Gilroy ExtraBold";
   font-size: 48px;
   text-decoration: none;
@@ -57,31 +84,25 @@ body {
   opacity: 0.3;
 }
 
-.page-title {
-  font-family: "Gilroy ExtraBold";
-  font-size: 47px;
+.header-container-1 {
+  display: flex;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.search-form {
+  width: 440px;
+  margin-right: 125px;
 }
 
 .search-form-input {
   font: inherit;
   height: 49px;
   width: 355px;
+  color: #000000;
   background-color: #f7e296;
   border: none;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
-  opacity:0.3;
+  opacity: 0.3;
 }
 
 .search-form-input:hover {
@@ -118,6 +139,12 @@ body {
   visibility: visible;
 }
 
+.user-navigation {
+  padding: 0;
+  margin: 0;
+  width: 500px;
+}
+
 .user-navigation a {
   color: #000000;
   font: inherit;
@@ -140,7 +167,13 @@ body {
   opacity:0.3;
 }
 
+/* site navigation header */
+
 .site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
   list-style: none;
   font-family: "Gilroy ExtraBold";
   font-size: 18px;
@@ -171,24 +204,42 @@ body {
   opacity:0.3;
 }
 
+/* sliders */
+
+.sliders {
+  display: flex;
+  width: 1080px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.slider-description {
+  width: 500px;
+}
+
+.slider-images {
+  margin-right: 40px;
+}
+
+.slider-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .slider-description h2 {
   font-family: "Gilroy ExtraBold";
   font-size: 47px;
   line-height: 56px;
-}
-
-.btn {
-  display: inline-block;
-  width: 220px;
-  height: 40px;
-  font-size: 18px;
-  font-family: "Gilroy ExtraBold";
-  color: #000000;
-  background-color: #f0c52e;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
 }
 
 .slider-feature-value {
@@ -205,19 +256,50 @@ body {
   width: 160px;
 }
 
-.popular-link {
+.btn {
   display: inline-block;
+  width: 220px;
+  height: 40px;
+  font-size: 18px;
+  font-family: "Gilroy ExtraBold";
+  color: #000000;
+  background-color: #f0c52e;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* popular */
+
+.popular {
+  width: 1160px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 110px;
+  margin-bottom: 85px;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-link {
   font-size: 18px;
   line-height: 22px;
   vertical-align: top;
+  list-style: none;
   color: #000000;
-
   text-align: center;
 }
+
 .popular-link img {
   width: 160px;
   height: 160px;
-  background-color: #f7e296;
+  background-color: #f0c52e;
+  color: #000000;
+  opacity: 0.5;
 }
 
 .popular-link a {
@@ -226,8 +308,24 @@ body {
   color: #000000;
 }
 
+/* service */
+
+.services-tabs {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 105px;
+  padding: 0;
+}
+
 .tabs-controls {
+  width: 280px;
   list-style: none;
+}
+
+.tabs-contents {
+   width: 430px;
 }
 
  .tab-control {
@@ -261,7 +359,19 @@ body {
   font-size: 47px;
 }
 
+/* brands */
+
+.brands {
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 0;
+
+}
+
 .brands-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -282,6 +392,24 @@ body {
   outline: none;
 }
 
+/* about contact */
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  padding: 0;
+}
+
+.about-us {
+  width: 475px;
+}
+
+.contacts {
+  width: 560px;
+}
 
 .about-us h2,
 .contacts h2 {
@@ -296,6 +424,7 @@ body {
   color: #000000;
   font-family: "Gilroy ExtraBold";
 }
+
 
 .breadcrumbs {
   list-style: none;
@@ -323,7 +452,7 @@ body {
   letter-spacing: 0.2em;
 }
 
-fieldset {
+.filter-price {
   border: none;
 }
 
@@ -433,14 +562,70 @@ fieldset {
   color: #000000;
 }
 
+/* footer */
+
 .main-footer {
+  height: 320px;
   background-color: #464646;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-user-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 52px;
+  line-height: 0;
+  width: 300px;
 }
 
 .footer-logo {
   font-size: 48px;
   font-family: "Gilroy ExtraBold";
   color: #ffc600;
+  line-height: 0;
+  padding-bottom: 75px;
+}
+
+.address {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 160px;
+}
+
+.footer-navigation-links {
+  display: flex;
+  justify-content: space-between;
+  width: 425px;
+  padding: 0;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 145px;
+  padding: 0;
+  margin: 0;
+  padding-left: 140px;
+  padding-top: 70px;
 }
 
 .footer-logo:hover,
@@ -453,7 +638,7 @@ fieldset {
   opacity: 0.3;
 }
 
-address {
+.address {
   font-size: 15px;
   color: #ffffff;
   font-style: normal;
@@ -538,6 +723,21 @@ address {
 
 .footer-user:active {
   opacity: 0.3;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 72px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0;
+  margin: 0;
 }
 
 .phone a {

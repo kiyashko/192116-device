@@ -8,12 +8,14 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="main-header-container">
       <a href="#" class="main-header-logo">
         Device
       </a>
+      <div container>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="search-form-input" type="search" name="search" placeholder="Поиск по сайту" id="search">
-        <input class="search-button" type="submit" value="Найти">
+        <input class="search-form-button" type="submit" value="Найти">
         <label class="visually-hidden" for="search">Поиск по сайту</label>
       </form>
       <div class="user-navigation">
@@ -41,6 +43,7 @@
             <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
           </ul>
       </nav>
+    </div>
     </header>
     <main class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
@@ -52,7 +55,7 @@
       <section class="sidebar">
         <h2>Фильтр:</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
+            <fieldset class="filter-price">
               <legend class="filters-name">Стоимость</legend>
                 <div class="filters-price">
                   <span>от 0</span>
@@ -181,7 +184,7 @@
         <a class="footer-logo">
           DEVICE
         </a>
-        <address>
+        <address class="address">
             г. Москва, ул. Строителей, 15
         </address>
       </div>
