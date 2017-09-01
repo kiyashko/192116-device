@@ -68,7 +68,6 @@ body {
 }
 
 .main-header-logo {
-  position: absolute;
   top: 25px;
   font-family: "Gilroy ExtraBold";
   font-size: 48px;
@@ -84,7 +83,7 @@ body {
   opacity: 0.3;
 }
 
-.header-container-1 {
+.header-container {
   display: flex;
 }
 
@@ -283,13 +282,16 @@ body {
 .popular-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0px;
 }
 
 .popular-link {
   font-size: 18px;
   line-height: 22px;
   vertical-align: top;
-  list-style: none;
+  flex-basis: 16.66666%;
   color: #000000;
   text-align: center;
 }
@@ -297,6 +299,7 @@ body {
 .popular-link img {
   width: 160px;
   height: 160px;
+  margin-bottom: 25px;
   background-color: #f0c52e;
   color: #000000;
   opacity: 0.5;
@@ -306,6 +309,7 @@ body {
   text-decoration: none;
   font-family: "Gilroy ExtraBold";
   color: #000000;
+  line-height: 0;
 }
 
 /* service */
@@ -313,9 +317,7 @@ body {
 .services-tabs {
   display: flex;
   width: 1160px;
-  margin: 0 auto;
-  margin-top: 80px;
-  margin-bottom: 105px;
+  margin: 80px auto 105px;
   padding: 0;
 }
 
@@ -325,7 +327,7 @@ body {
 }
 
 .tabs-contents {
-   width: 430px;
+   flex-basis: 430px;
 }
 
  .tab-control {
@@ -363,8 +365,7 @@ body {
 
 .brands {
   width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
   padding: 0;
 
 }
@@ -373,6 +374,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding-left: 0px;
 }
 
 .brands-list a {
@@ -398,8 +400,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 75px;
+  margin: 0 auto 75px;
   padding: 0;
 }
 
@@ -425,12 +426,34 @@ body {
   font-family: "Gilroy ExtraBold";
 }
 
+/* inner */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin-top: 45px;
+  margin-left: 65px;
+  font-size: 47px;
+  font-family: "Gilroy ExtraBold";
+}
 
 .breadcrumbs {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-left: 65px;
+  margin-bottom: 53px;
   font-size: 14px;
+  list-style: none;
   opacity: 0.3;
   color: #000000;
+}
+
+.breadcrumbs li {
+  margin-right: 40px;
 }
 
 .breadcrumbs a {
@@ -445,6 +468,18 @@ body {
   opacity: 0.1;
 }
 
+.main-content {
+  display: flex;
+  margin: 0 0 0 65px;
+}
+
+.sidebar  {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #ebebeb;
+}
+
 .sidebar h2 {
   font-family: "Gilroy ExtraBold";
   font-size: 18px;
@@ -453,7 +488,13 @@ body {
 }
 
 .filter-price {
+  padding: 0;
   border: none;
+}
+
+.filters-sort {
+  display: flex;
+  align-items: baseline;
 }
 
 .filters-sort h2 {
@@ -466,10 +507,16 @@ body {
 .filters-name {
   font-family: "Gilroy ExtraBold";
   font-size: 18px;
+  padding: 0;
 }
 
 .filter-options {
   list-style: none;
+}
+
+.content {
+  width: 760px;
+  margin-left: 72px;
 }
 
 .btn-up {
@@ -503,6 +550,16 @@ body {
   opacity: 1;
 }
 
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  width: 360px;
+}
+
 .compare {
   font-family: "Open Sans Light","Arial",sans-serif;
   font-size: 13px;
@@ -525,15 +582,34 @@ body {
   color: #000000;
 }
 
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .product-content span {
   font-family: "Gilroy Light";
   font-size: 16px;
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
   list-style: none;
+  padding: 0;
   font-family: "Gilroy ExtraBold";
   font-size: 16px;
+}
+
+.pagination-list-pages {
+  display: flex;
+  margin-right: 32px;
+}
+
+.pagination-page {
+  margin-right: 32px;
 }
 
 .pagination-list a {
@@ -565,7 +641,6 @@ body {
 /* footer */
 
 .main-footer {
-  height: 320px;
   background-color: #464646;
 }
 
@@ -589,8 +664,7 @@ body {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  padding-bottom: 52px;
-  line-height: 0;
+  padding-bottom: 60px;
   width: 300px;
 }
 
@@ -598,7 +672,6 @@ body {
   font-size: 48px;
   font-family: "Gilroy ExtraBold";
   color: #ffc600;
-  line-height: 0;
   padding-bottom: 75px;
 }
 
@@ -611,21 +684,27 @@ body {
 
 .footer-navigation-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 425px;
   padding: 0;
-  margin: 0;
-  padding-top: 60px;
+  margin-top: 90px;
+}
+
+.footer-navigation-link {
+  margin-right: 35px;
 }
 
 .footer-social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 145px;
+  margin-left: 140px;
+  margin-top: 65px;
   padding: 0;
-  margin: 0;
-  padding-left: 140px;
-  padding-top: 70px;
+}
+
+.social-btn {
+    margin-right: 25px;
 }
 
 .footer-logo:hover,
@@ -726,16 +805,14 @@ body {
 }
 
 .phone {
-  display: flex;
-  flex-direction: row-reverse;
   padding: 0;
   margin: 0;
   margin-bottom: 72px;
+  text-align: right;
 }
 
 .copyright {
-  display: flex;
-  flex-direction: row-reverse;
+  float: right;
   padding: 0;
   margin: 0;
 }
