@@ -71,6 +71,7 @@ body {
   top: 25px;
   font-family: "Gilroy ExtraBold";
   font-size: 48px;
+  line-height: 0;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -324,6 +325,7 @@ body {
 .tabs-controls {
   width: 280px;
   list-style: none;
+  padding: 0;
 }
 
 .tabs-contents {
@@ -433,6 +435,11 @@ body {
   margin: 0 auto;
 }
 
+.breadcrumbs-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .page-title {
   margin-top: 45px;
   margin-left: 65px;
@@ -470,7 +477,8 @@ body {
 
 .main-content {
   display: flex;
-  margin: 0 0 0 65px;
+  width: 1100px;
+  margin: 0;
 }
 
 .sidebar  {
@@ -556,8 +564,14 @@ body {
   flex-wrap: wrap;
 }
 
+.product-item h3 {
+  padding: 0;
+  margin: 0;
+}
+
 .product-item {
   width: 360px;
+  padding-bottom: 43px;
 }
 
 .compare {
@@ -605,11 +619,14 @@ body {
 
 .pagination-list-pages {
   display: flex;
-  margin-right: 32px;
 }
 
 .pagination-page {
   margin-right: 32px;
+}
+
+.pagination-page:last-child {
+  margin-right: 0;
 }
 
 .pagination-list a {
@@ -697,8 +714,6 @@ body {
 .footer-social {
   display: flex;
   justify-content: center;
-  width: 145px;
-  margin-left: 140px;
   margin-top: 65px;
   padding: 0;
 }
@@ -723,8 +738,12 @@ body {
   font-style: normal;
 }
 
-.footer-navigation-links {
+.footer-navigation-link {
   list-style: none;
+}
+
+.footer-navigation-link:last-child {
+  margin-right: 0;
 }
 
 .footer-navigation-links a {
