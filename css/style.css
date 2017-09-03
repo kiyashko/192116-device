@@ -68,10 +68,9 @@ body {
 }
 
 .main-header-logo {
-  top: 25px;
   font-family: "Gilroy ExtraBold";
   font-size: 48px;
-  line-height: 0;
+  line-height: 48px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -478,7 +477,7 @@ body {
 .main-content {
   display: flex;
   width: 1100px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .sidebar  {
@@ -571,7 +570,7 @@ body {
 
 .product-item {
   width: 360px;
-  padding-bottom: 43px;
+  margin-bottom: 43px;
 }
 
 .compare {
@@ -675,6 +674,14 @@ body {
   flex-direction: column;
 }
 
+.footer-center {
+  width: 426px;
+}
+
+.footer-right {
+  width: 300px;
+}
+
 .footer-user-navigation {
   display: flex;
   flex-direction: row;
@@ -689,7 +696,8 @@ body {
   font-size: 48px;
   font-family: "Gilroy ExtraBold";
   color: #ffc600;
-  padding-bottom: 75px;
+  line-height: 48px;
+  padding-bottom: 57px;
 }
 
 .address {
@@ -701,7 +709,7 @@ body {
 
 .footer-navigation-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 425px;
   padding: 0;
   margin-top: 90px;
@@ -740,10 +748,6 @@ body {
 
 .footer-navigation-link {
   list-style: none;
-}
-
-.footer-navigation-link:last-child {
-  margin-right: 0;
 }
 
 .footer-navigation-links a {
