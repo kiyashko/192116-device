@@ -344,32 +344,79 @@ body {
 
 .sliders {
   display: flex;
-  width: 1080px;
+  width: 1000px;
   flex-direction: column;
   margin: 0 auto;
+}
+
+.slider-number {
+  position: absolute;
+  right: 423px;
+  top: 247px;
+  margin: 0;
+  font-family: "Gilroy ExtraBold";
+  font-size: 180px;
+  line-height: 180px;
+  color: white;
+  z-index: 1;
 }
 
 .slider-description {
   width: 500px;
 }
 
-.slider-images {
-  margin-right: 40px;
-}
-
 .slider-1 {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
 .slider-2 {
+  display: none;
+}
+
+.slider-3 {
+  display: none;
+}
+
+.sliders > input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute;
+  right: 453px;
+  top: 604px;
+  width: 78px;
   display: flex;
   justify-content: space-between;
 }
 
-.slider-3 {
+.slider-controls label {
+  display:inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/slider-button-empty.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+#btn-1:checked ~ .slider-1,
+#btn-2:checked ~ .slider-2,
+#btn-3:checked ~ .slider-3 {
   display: flex;
   justify-content: space-between;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  display:inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/slider-button.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .slider-description h2 {
