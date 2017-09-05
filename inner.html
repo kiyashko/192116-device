@@ -18,11 +18,15 @@
           <input class="search-form-button" type="submit" value="Найти">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
         </form>
-        <div class="user-navigation">
-          <a class="login-link" href="#">Валентин Петухов</a>
-          <a class="log-out" href="#">Выйти</a>
-          <a class="сompare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
+        <div class="right-header-container">
+          <div class="user-navigation">
+            <div class="user-navigation-container">
+              <a class="login-link-in" href="#">Валентин Петухов</a>
+              <a class="log-out" href="#">Выйти</a>
+            </div>
+              <a class="сompare" href="#">Сравнить</a>
+              <a class="cart" href="#">Корзина</a>
+          </div>
         </div>
       </div>
       <nav class="main-navigation">
@@ -30,18 +34,26 @@
           <ul class="site-navigation">
             <li class="site-catalog">
               <a class="all-catalog-links site-navigation-link" href="catalog.html">Каталог товаров</a>
-                <ul class="catalog-links">
-                  <li class="catalog-link"><a href="virtual-reality.html">Виртуальная реальность</a></li>
-                  <li class="catalog-link"><a href="selfie-monopod.html">Моноподы для селфи</a></li>
-                  <li class="catalog-link"><a href="action-camera.html">Экшн-камеры</a></li>
-                  <li class="catalog-link"><a href="fitness-bracelet.html">Фитнесс-браслеты</a></li>
-                  <li class="catalog-link"><a href="smart-clock.html">Умные часы</a></li>
-                  <li class="catalog-link"><a href="quadrupter.html">Квадрокоптеры</a></li>
-                </ul>
+                <div class="catalog-links">
+                  <ul class="catalog-links-column">
+                    <li class="catalog-link"><a href="virtual-reality.html">Виртуальная реальность</a></li>
+                    <li class="catalog-link"><a href="selfie-monopod.html">Моноподы для селфи</a></li>
+                    <li class="catalog-link"><a href="action-camera.html">Экшн-камеры</a></li>
+                  </ul>
+                  <ul class="catalog-links-column">
+                    <li class="catalog-link"><a href="fitness-bracelet.html">Фитнесс-браслеты</a></li>
+                    <li class="catalog-link"><a href="smart-clock.html">Умные часы</a></li>
+                  </ul>
+                  <ul class="catalog-links-column">
+                    <li class="catalog-link"><a href="quadrupter.html">Квадрокоптеры</a></li>
+                  </ul>
+                </div>
             </li>
-            <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
-            <li><a class="site-navigation-link" href="guarantee.html">Гарантия</a></li>
-            <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+              <ul class="catalog-links-service">
+                <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
+                <li><a class="site-navigation-link" href="guarantee.html">Гарантия</a></li>
+                <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+              </ul>
           </ul>
       </nav>
     </div>
@@ -56,15 +68,12 @@
       </div>
       <div class="main-content">
       <section class="sidebar">
+        <div class="sidebar-container">
           <h2>Фильтр:</h2>
-            <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="filter-price">
-                <legend class="filters-name">Стоимость</legend>
-                  <div class="filters-price">
-                    <span>от 0</span>
-                    <span>до 5000</span>
-                  </div>
-              </fieldset>
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-price">
+            <legend>Стоимость</legend>
+            </fieldset>
               <fieldset>
                 <legend class="filters-name">Цвет</legend>
                   <ul class="filter-options">
@@ -99,6 +108,7 @@
               </fieldset>
               <button class="btn" type="submit">Показать</button>
             </form>
+          </div>
         </section>
         <section class="content">
           <div class="filters-sort">

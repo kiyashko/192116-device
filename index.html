@@ -18,10 +18,12 @@
             <input class="search-form-button" type="submit" value="Найти">
             <label class="visually-hidden" for="search">Поиск по сайту</label>
           </form>
-          <div class="user-navigation">
-            <a class="login-link" href="#">Войти</a>
-            <a class="сompare" href="#">Сравнить</a>
-            <a class="cart" href="#">Корзина</a>
+          <div class="right-header-container">
+            <div class="user-navigation">
+              <a class="login-link" href="#">Войти</a>
+              <a class="сompare" href="#">Сравнить</a>
+              <a class="cart" href="#">Корзина</a>
+            </div>
           </div>
         </div>
         <nav class="main-navigation">
@@ -29,18 +31,26 @@
             <ul class="site-navigation">
               <li class="site-catalog">
                 <a class="all-catalog-links site-navigation-link" href="catalog.html">Каталог товаров</a>
-                  <ul class="catalog-links">
-                    <li class="catalog-link"><a href="virtual-reality.html">Виртуальная реальность</a></li>
-                    <li class="catalog-link"><a href="selfie-monopod.html">Моноподы для селфи</a></li>
-                    <li class="catalog-link"><a href="action-camera.html">Экшн-камеры</a></li>
-                    <li class="catalog-link"><a href="fitness-bracelet.html">Фитнесс-браслеты</a></li>
-                    <li class="catalog-link"><a href="smart-clock.html">Умные часы</a></li>
-                    <li class="catalog-link"><a href="quadrupter.html">Квадрокоптеры</a></li>
-                  </ul>
+                  <div class="catalog-links">
+                    <ul class="catalog-links-column">
+                      <li class="catalog-link"><a href="virtual-reality.html">Виртуальная реальность</a></li>
+                      <li class="catalog-link"><a href="selfie-monopod.html">Моноподы для селфи</a></li>
+                      <li class="catalog-link"><a href="action-camera.html">Экшн-камеры</a></li>
+                    </ul>
+                    <ul class="catalog-links-column">
+                      <li class="catalog-link"><a href="fitness-bracelet.html">Фитнесс-браслеты</a></li>
+                      <li class="catalog-link"><a href="smart-clock.html">Умные часы</a></li>
+                    </ul>
+                    <ul class="catalog-links-column">
+                      <li class="catalog-link"><a href="quadrupter.html">Квадрокоптеры</a></li>
+                    </ul>
+                  </div>
               </li>
-              <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
-              <li><a class="site-navigation-link" href="guarantee.html">Гарантия</a></li>
-              <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+                <ul class="catalog-links-service">
+                  <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
+                  <li><a class="site-navigation-link" href="guarantee.html">Гарантия</a></li>
+                  <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+                </ul>
             </ul>
         </nav>
     </div>
@@ -55,12 +65,14 @@
                     Делай селфи,<br>
                     как Бен Стиллер!
                   </h2>
-                  <p>
-                    Самая длинная палка для селфи доступна в нашем магазине.
-                  </p>
-                  <p>
-                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                  </p>
+                  <div class="slider-description-text">
+                    <p>
+                      Самая длинная палка для селфи доступна в нашем магазине.
+                    </p>
+                    <p>
+                      Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                    </p>
+                  </div>
                   <a class="btn slider-btn" href="selfie-monopod.html">Подробнее</a>
                   <table class="slider-features">
                     <tr class="slider-feature-value">
@@ -83,9 +95,11 @@
                     Худеем<br>
                     правильно!
                   </h2>
-                  <p>
-                    Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать диету.
-                  </p>
+                  <div class="slider-description-text">
+                    <p>
+                      Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать диету.
+                    </p>
+                  </div>
                   <a class="btn slider-btn" href="fitness-bracelet.html">Подробнее</a>
                   <table class="slider-features">
                     <tr class="slider-feature-value">
@@ -104,10 +118,12 @@
                     Порхает как бабочка,<br>
                     жалит как пчела!
                   </h2>
-                  <p>
-                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
-                    под стандартную камеру.
-                  </p>
+                  <div class="slider-description-text">
+                    <p>
+                      Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
+                      под стандартную камеру.
+                    </p>
+                  </div>
                   <a class="btn slider-btn" href="quadrupter.html">Подробнее</a>
                   <table class="slider-features">
                     <tr class="slider-feature-value">
@@ -126,37 +142,37 @@
           <h2 class="visually-hidden">Популярные товары</h2>
             <ul class="popular-list">
               <li class="popular-link">
-                <a href="virtual-reality.html">
-                    <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-                    Виртуальная реальность
+                <a class="popuar-url" href="virtual-reality.html">
+                  <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+                  Виртуальная реальность
                 </a>
               </li>
               <li class="popular-link">
-                <a href="selfie-monopod.html">
+                <a class="popuar-url" href="selfie-monopod.html">
                   <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
                   Моноподы для селфи
                 </a>
               </li>
               <li class="popular-link">
-                <a  href="action-camera.html">
+                <a class="popuar-url"  href="action-camera.html">
                   <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
                   Экшн-камеры
                 </a>
               </li>
               <li class="popular-link">
-                <a href="fitness-bracelet.html">
-                <img src="img/popular-4.svg" width="107" height="65" alt="Фитнесс-браслеты">
-                  Фитнесс-браслеты
+                <a class="popuar-url" href="fitness-bracelet.html">
+                <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                  Фитнес-браслеты
                 </a>
               </li>
               <li class="popular-link">
-                <a href="smart-clock.html">
+                <a class="popuar-url" href="smart-clock.html">
                 <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
                   Умные часы
                 </a>
               </li>
               <li class="popular-link">
-                <a href="quadrupter.html">
+                <a class="popuar-url" href="quadrupter.html">
                 <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
                   Квадрокоптеры
                 </a>
@@ -165,25 +181,28 @@
         </section>
         <section class="services-tabs">
             <h2 class="visually-hidden">Сервис</h2>
-              <ul class="tabs-controls">
-                <li>
-                  <button class="tab-control tab-active">Доставка</button>
-                </li>
-                  <button class="tab-control">Гарантия</button>
-                </li>
-                <li>
-                  <button class="tab-control">Кредит</button>
-                </li>
-              </ul>
+              <div class="tabs-container">
+                <ul class="tabs-controls">
+                  <li>
+                    <button class="tab-control tab-active">Доставка</button>
+                  </li>
+                  <li>
+                    <button class="tab-control">Гарантия</button>
+                  </li>
+                  <li>
+                    <button class="tab-control">Кредит</button>
+                  </li>
+                </ul>
+              </div>
              <div class="tabs-contents">
-              <div class="tab-content tab-active-content">
+              <div class="tab-content tab-delivery tab-active-content">
                 <h2>Доставка</h2>
                   <p>
                     Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                     Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                   </p>
               </div>
-              <div class="tab-content">
+              <div class="tab-content tab-warranty">
                 <h2>Гарантия</h2>
                   <p>
                     Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте,
@@ -191,7 +210,7 @@
                     Товар, не дом, конечно же.
                   </p>
               </div>
-              <div class="tab-content">
+              <div class="tab-content tab-credit">
                 <h2>Кредит</h2>
                   <p>
                     Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
