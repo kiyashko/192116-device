@@ -72,7 +72,18 @@
           <h2>Фильтр:</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-price">
-            <legend>Стоимость</legend>
+            <legend class="form-legend">Стоимость</legend>
+            <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="selected-price">
+                <span>от 0</span>
+                <span>до 5000</span>
+              </div>
             </fieldset>
               <fieldset>
                 <legend class="filters-name">Цвет</legend>
@@ -101,12 +112,17 @@
               </fieldset>
               <fieldset>
                 <legend class="filters-name">Bluetooth</legend>
-                <input class="filters-radio" type="radio" value="Есть" name="bluetooth" id="bt-yes" checked>
-                <label for="bt-yes">Есть</label>
-                <input class="filter-radio" type="radio" value="Нет" name="bluetooth" id="bt-no">
-                <label for="bt-no">Нет</label>
+                  <ul class="bluetooth-list">
+                    <li>
+                      <input class="filters-radio" type="radio" value="Есть" name="bluetooth" id="bt-yes" checked>
+                      <label for="bt-yes">Есть</label>
+                    </li>
+                    <li>
+                      <input class="filters-radio" type="radio" value="Нет" name="bluetooth" id="bt-no">
+                      <label for="bt-no">Нет</label>
+                    </li>
               </fieldset>
-              <button class="btn" type="submit">Показать</button>
+              <button class="filter-accept" type="submit">Показать</button>
             </form>
           </div>
         </section>
@@ -131,7 +147,7 @@
             <div class="product-list">
               <div class="product-item">
                 <div class="product-thumbnail">
-                  <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <img class="item-img" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                     <div class="item-buy">
                       <a class="btn" href="#">В корзину</a>
                       <a class="compare" href="#">Добавить к сравнению</a>
