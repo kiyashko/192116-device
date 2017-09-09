@@ -7,8 +7,8 @@
     <title>Каталог - Интернет-магазин Device</title>
   </head>
   <body>
-    <header class="main-header-inner">
-      <div class="main-header-container">
+    <header class="main-header">
+      <div class="main-header-container-inner">
       <a href="#" class="main-header-logo">
         Device
       </a>
@@ -19,14 +19,12 @@
           <label class="visually-hidden" for="search">Поиск по сайту</label>
         </form>
         <div class="right-header-container">
-          <div class="user-navigation">
-            <div class="user-navigation-container">
-              <a class="login-link-in" href="#">Валентин Петухов</a>
-              <a class="log-out" href="#">Выйти</a>
-            </div>
-              <a class="сompare" href="#">Сравнить</a>
-              <a class="cart" href="#">Корзина</a>
-          </div>
+          <ul class="user-navigation">
+            <li class="login-link-in"><a href="#">Валентин Петухов</a></li>
+            <li class="log-out"><a href="#">Выйти</a></li>
+            <li class="сompare"><a href="#">Сравнить</a></li>
+            <li class="cart"><a href="#">Корзина</a></li>
+          </ul>
         </div>
       </div>
       <nav class="main-navigation">
@@ -129,9 +127,11 @@
           <div class="filters-sort">
             <h2>Сортировка:</h2>
             <div class="filters-type">
-               <a class="current">По цене</a>
-               <a href="#">По типу</a>
-               <a href="#">По популярности</a>
+              <ul>
+                <li><a class="current">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+             </ul>
             </div>
             <div class="filters-up-down">
                <a class="btn-up" href="#">
