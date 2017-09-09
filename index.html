@@ -46,11 +46,9 @@
                     </ul>
                   </div>
               </li>
-                <ul class="catalog-links-service">
-                  <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
-                  <li><a class="site-navigation-link" href="guarantee.html">Гарантия</a></li>
-                  <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
-                </ul>
+              <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
+              <li><a class="site-navigation-link" href="guarantee.html">Гарантия</a></li>
+              <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </div>
@@ -62,12 +60,12 @@
           <input class="slider-btn" type="radio" id="btn-2" name="toggle">
           <input class="slider-btn" type="radio" id="btn-3" name="toggle">
           <div class="slider-1">
-            <img class="slider-images" src="img/slider-1.jpg" width="384" height="486" alt="Палка для сэлфи">
+            <img class="slider-images" src="img/slider-1.png" width="384" height="486" alt="Палка для сэлфи">
+              <span class="slider-line"></span>
               <span class="slider-number">01</span>
               <div class="slider-description">
                   <h2>
-                    Делай селфи,<br>
-                    как Бен Стиллер!
+                    Делай селфи,<br>как Бен Стиллер!
                   </h2>
                   <div class="slider-description-text">
                     <p>
@@ -93,7 +91,8 @@
               </div>
           </div>
           <div class="slider-2">
-            <img class="slider-images" src="img/slider-2.jpg" width="345" height="485" alt="Фитнесс-Браслет">
+            <img class="slider-images" src="img/slider-2.png" width="345" height="485" alt="Фитнесс-Браслет">
+              <span class="slider-line"></span>
               <span class="slider-number">02</span>
               <div class="slider-description">
                   <h2>
@@ -117,8 +116,9 @@
               </div>
           </div>
           <div class="slider-3">
+            <span class="slider-line"></span>
             <span class="slider-number">03</span>
-            <img class="slider-images" src="img/slider-3.jpg" width="526" height="334" alt="Квадрокоптер">
+            <img class="slider-images" src="img/slider-3.png" width="528" height="334" alt="Квадрокоптер">
               <div class="slider-description">
                   <h2>
                     Порхает как бабочка,<br>
@@ -133,8 +133,8 @@
                   <a class="btn slider-btn" href="quadrupter.html">Подробнее</a>
                   <table class="slider-features">
                     <tr class="slider-feature-value">
-                      <td>800 метров</td>
-                      <td>50 метров</td>
+                      <td>800 м</td>
+                      <td>50 м</td>
                     </tr>
                     <tr class="slider-feature-type">
                       <td>Дальность полета</td>
@@ -302,6 +302,7 @@
           <address class="address">
               г. Москва, ул. Строителей, 15
           </address>
+          <span class="footer-decorate"></span>
         </div>
         <div class="footer-center">
           <ul class="footer-navigation-links">
@@ -335,19 +336,25 @@
     <section class="modal-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
         <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
-          <label class="form-write-us-name">
-            Ваше имя:
-          <input type="text" name="name" placeholder="Представтесь, пожалуйста">
-        </label>
-        <label class="form-write-us-email">
-          Ваш e-mail:
-          <input type="text" name="email" placeholder="Для отправки ответа">
-        </label>
-        <label class="form-write-us-letter">
-          Текст письма:
-          <textarea name="letter" placeholder="В свободной форме"></textarea>
-        </label>
-        <button class="btn" type="submit">Отправить</button>
+          <div class="form-write-us-name">
+            <label>
+              Ваше имя:
+              <input type="text" name="name" placeholder="Представтесь, пожалуйста">
+            </label>
+          </div>
+          <div class="form-write-us-email">
+            <label>
+                Ваш e-mail:
+                <input type="text" name="email" placeholder="Для отправки ответа">
+            </label>
+          </div>
+          <div class="form-write-us-letter">
+            <label>
+              Текст письма:
+              <textarea name="letter" placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+        <button class="send-btn btn" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button"></button>
     </section>

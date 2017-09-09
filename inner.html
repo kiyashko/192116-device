@@ -9,7 +9,7 @@
   <body>
     <header class="main-header">
       <div class="main-header-container">
-      <a href="#" class="main-header-logo">
+      <a href="#" class="main-header-logo-inner">
         Device
       </a>
       <div class="header-container">
@@ -49,11 +49,9 @@
                   </ul>
                 </div>
             </li>
-              <ul class="catalog-links-service">
                 <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
                 <li><a class="site-navigation-link" href="guarantee.html">Гарантия</a></li>
                 <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
-              </ul>
           </ul>
       </nav>
     </div>
@@ -121,8 +119,9 @@
                       <input class="filters-radio" type="radio" value="Нет" name="bluetooth" id="bt-no">
                       <label for="bt-no">Нет</label>
                     </li>
+                  </ul>
               </fieldset>
-              <button class="filter-accept" type="submit">Показать</button>
+              <button class="filter-accept btn" type="submit">Показать</button>
             </form>
           </div>
         </section>
@@ -136,10 +135,10 @@
             </div>
             <div class="filters-up-down">
                <a class="btn-up" href="#">
-                 <img src="img/btn-up.svg">
+                 <img src="img/btn-up.svg" alt="Button Up">
                </a>
                <a class="btn-down current">
-                 <img src="img/btn-down.svg">
+                 <img src="img/btn-down.svg" alt="Button Down">
                </a>
             </div>
           </div>
@@ -201,16 +200,13 @@
             <h2 class="visually-hidden">Пагинация</h2>
               <ul class="pagination-list">
                 <li><a class="pagination-back" href="#">Назад</a></li>
-                  <div class="pagination-list-pages">
-                    <li class="pagination-page current"><a>1</a></li>
-                    <li class="pagination-page"><a href="#">2</a></li>
-                    <li class="pagination-page"><a href="#">3</a></li>
-                  </div>
-                  <li><a class="pagination-next" href="#">Вперед</a></li>
+                <li class="pagination-page current"><a>1</a></li>
+                <li class="pagination-page"><a href="#">2</a></li>
+                <li class="pagination-page"><a href="#">3</a></li>
+                <li><a class="pagination-next" href="#">Вперед</a></li>
               </ul>
         </section>
       </div>
-    </div>
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-left">
@@ -220,6 +216,7 @@
           <address class="address">
               г. Москва, ул. Строителей, 15
           </address>
+          <span class="footer-decorate"></span>
         </div>
         <div class="footer-center">
           <ul class="footer-navigation-links">
