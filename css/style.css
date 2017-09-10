@@ -1822,6 +1822,11 @@ fieldset .filters-name {
 
 .modal-show {
   display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
 }
 
 .form-write-us-name,
@@ -1928,6 +1933,7 @@ fieldset .filters-name {
   display: none;
   position: relative;
   width: 960px;
+  box-shadow: 7px 7px 20px 0px rgba(4, 6, 6, 0.2);
 }
 
 .modal-map-close {
