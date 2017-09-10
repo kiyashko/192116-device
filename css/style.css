@@ -101,8 +101,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   margin-bottom: 26px;
 }
 
@@ -200,8 +200,8 @@ body {
 
 .user-navigation .login-link {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .user-navigation .login-link-in {
@@ -394,8 +394,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: 420px;
   position: relative;
   margin: -34px auto 115px;
@@ -480,8 +480,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: absolute;
   right: 65px;
   top: 248px;
@@ -507,8 +507,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
@@ -592,10 +592,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0px;
 }
@@ -737,7 +737,7 @@ body {
 }
 
 .tab-control:hover {
-    background: #ffc600;
+  background: #ffc600;
 }
 
 .tab-control:active {
@@ -768,8 +768,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-left: 115px;
   width: 880px;
 }
@@ -823,8 +823,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style: none;
   padding-left: 0px;
 }
@@ -837,13 +837,13 @@ body {
 
 .brands-list a:hover {
   -webkit-filter: none;
-          filter: none;
+  filter: none;
   opacity: 1;
 }
 
 .brands-list a:focus {
   -webkit-filter: none;
-          filter: none;
+  filter: none;
   opacity: 1;
   outline: none;
 }
@@ -855,8 +855,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 1160px;
   margin: 0 auto 75px;
   padding: 0;
@@ -910,11 +910,11 @@ body {
 }
 
 .about-us li::before {
-    top: 50%;
-    width: 4px;
-    height: 4px;
-    border: 3px solid #b2b2b2;
-    border-radius: 50%;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border: 3px solid #b2b2b2;
+  border-radius: 50%;
 }
 
 /* inner */
@@ -941,7 +941,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 0;
   margin-left: 65px;
   margin-bottom: 53px;
@@ -1001,8 +1001,8 @@ body {
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 0;
 
 }
@@ -1072,8 +1072,8 @@ body {
 
 .range-controls .toggle:active {
   -webkit-transform:scale(1.1);
-      -ms-transform:scale(1.1);
-          transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  transform:scale(1.1);
 }
 
 .range-controls .scale {
@@ -1100,8 +1100,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 144px;
   margin-top: 10px;
   margin-bottom: 35px;
@@ -1139,7 +1139,7 @@ fieldset .filters-name {
 }
 
 .filter-input {
-    display: none;
+  display: none;
 }
 
 .filter-options label {
@@ -1263,8 +1263,8 @@ fieldset .filters-name {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   position: relative;
   background-color: #ebebeb;
   padding-top: 5px;
@@ -1294,8 +1294,8 @@ fieldset .filters-name {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 41px;
 }
 
@@ -1351,10 +1351,10 @@ fieldset .filters-name {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 69px;
 }
 
@@ -1446,11 +1446,11 @@ fieldset .filters-name {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .product-content span {
@@ -1535,8 +1535,8 @@ fieldset .filters-name {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
   padding-top: 65px;
@@ -1549,8 +1549,8 @@ fieldset .filters-name {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer-center {
@@ -1567,13 +1567,13 @@ fieldset .filters-name {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   padding-bottom: 60px;
@@ -1648,8 +1648,9 @@ fieldset .filters-name {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 432px;
   padding: 0;
@@ -1669,15 +1670,16 @@ fieldset .filters-name {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 65px;
   padding: 0;
 }
 
 .social-btn {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .footer-logo:hover,
@@ -1715,12 +1717,12 @@ fieldset .filters-name {
 }
 
 .social-btn {
-    display: inline-block;
-    width: 33px;
-    height: 33px;
-    font-size: 0;
-    opacity: 0.3;
-    background-repeat: no-repeat;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  font-size: 0;
+  opacity: 0.3;
+  background-repeat: no-repeat;
 }
 
 .footer-social-fb {
@@ -1810,14 +1812,14 @@ fieldset .filters-name {
   width: 960px;
   margin: 0 auto;
   -webkit-box-sizing:border-box;
-          box-sizing:border-box;
+  box-sizing:border-box;
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 100px;
   padding-right: 100px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
 .modal-show {
@@ -1825,6 +1827,8 @@ fieldset .filters-name {
   position: fixed;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 99;
 }
@@ -1844,7 +1848,7 @@ fieldset .filters-name {
 
 .form-write-us input[type=text] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 360px;
   padding: 12px 20px;
   margin-top: 4px;
@@ -1861,14 +1865,14 @@ fieldset .filters-name {
 
 .form-write-us-letter {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
 }
 
 .form-write-us-letter textarea {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 760px;
   height: 156px;
   min-height: 206px;
@@ -1933,6 +1937,7 @@ fieldset .filters-name {
   display: none;
   position: relative;
   width: 960px;
+  -webkit-box-shadow: 7px 7px 20px 0px rgba(4, 6, 6, 0.2);
   box-shadow: 7px 7px 20px 0px rgba(4, 6, 6, 0.2);
 }
 

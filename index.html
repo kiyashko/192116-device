@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <link href="css/style.min.css" rel="stylesheet">
     <title>Интернет-магазин Device</title>
   </head>
   <body>
@@ -292,7 +291,7 @@
                   <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
                 </a>
               </p>
-              <a class="btn" href="contact-us.html">Напишите нам</a>
+              <a class="btn write-link" href="contact-us.html">Напишите нам</a>
           </div>
         </section>
     </main>
@@ -367,19 +366,6 @@
         <button class="modal-map-close" type="button"></button>
       </div>
    </section>
-
-   <script>
-    var link = document.querySelector(".login-link");
-    var popup = document.querySelector(".modal-write-us");
-    var close = popup.querySelector(".modal-close");
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-      });
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-      });
-   </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

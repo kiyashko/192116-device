@@ -1,1 +1,23 @@
-var link=document.querySelector(".write-link"),popup=document.querySelector(".modal-write-us"),close=popup.querySelector(".modal-close");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show")});var link=document.querySelector(".write-link"),close=(popup=document.querySelector(".modal-write-us")).querySelector(".modal-close");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show")});
+var link = document.querySelector(".write-link");
+var popup = document.querySelector(".modal-write-us");
+var close = popup.querySelector(".modal-close");
+ link.addEventListener("click", function (evt) {
+ evt.preventDefault();
+ popup.classList.add("modal-show");
+});
+ close.addEventListener("click", function (evt) {
+ evt.preventDefault();
+ popup.classList.remove("modal-show");
+});
+
+var link = document.querySelector(".write-link");
+var popup = document.querySelector(".modal-write-us");
+var close = popup.querySelector(".modal-close");
+ link.addEventListener("click", function (evt) {
+ evt.preventDefault();
+ popup.classList.add("modal-show");
+});
+ close.addEventListener("click", function (evt) {
+ evt.preventDefault();
+ popup.classList.remove("modal-show");
+});
