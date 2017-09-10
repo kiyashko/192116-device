@@ -78,7 +78,7 @@ body {
 .main-header-logo {
   position: absolute;
   margin-top: -58px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 48px;
   line-height: 48px;
   color: #000000;
@@ -139,7 +139,7 @@ body {
   visibility: hidden;
   margin-left: -4px;
   font-size: 15px;
-  padding: 13px 19px 13px 19px;
+  padding: 13px 19px 12px 19px;
   background-color: #f7e296;
   border: 2px solid #000000;
 }
@@ -279,7 +279,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.20em;
@@ -395,7 +395,7 @@ body {
   right: 55px;
   top: -91px;
   margin: 0;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 180px;
   line-height: 180px;
   color: white;
@@ -421,7 +421,7 @@ body {
 }
 
 .slider-description h2 {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   margin: 0;
@@ -519,7 +519,7 @@ body {
   position: relative;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   padding: 11px 46px;
   color: #000000;
   text-decoration: none;
@@ -574,7 +574,7 @@ body {
   display: block;
   position: relative;
   font-size: 18px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   color: #000000;
   line-height: 21px;
   padding-top: 195px;
@@ -673,7 +673,7 @@ body {
   margin-bottom: 25px;
   border: none;
   background-color: inherit;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   color: #000000;
   text-decoration: none;
   text-align: center;
@@ -761,7 +761,7 @@ body {
 }
 
 .tab-content h2 {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 48px;
   line-height: 48px;
   margin-bottom: 35px;
@@ -830,7 +830,7 @@ body {
 
 .about-us h2,
 .contacts h2 {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47px;
 }
 
@@ -844,7 +844,7 @@ body {
   margin-top: 65px;
   margin-bottom: 45px;
   color: #000000;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 }
 
 .about-us li::before {
@@ -881,7 +881,7 @@ body {
   margin-top: 45px;
   margin-left: 65px;
   font-size: 47px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 }
 
 .breadcrumbs {
@@ -953,7 +953,7 @@ body {
   padding-top: 20px;
   padding-bottom: 24px;
   margin-bottom: 69px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -964,7 +964,7 @@ body {
   width: 200px;
   margin-bottom: 18px;
   padding-top: 12px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   border-top: 2px solid #000000;
@@ -1039,7 +1039,7 @@ body {
 fieldset .filters-name {
   width: 200px;
   padding-top: 12px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   border-top: 2px solid #000000;
@@ -1092,7 +1092,7 @@ fieldset .filters-name {
 }
 
 .filters-name {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   padding: 0;
 }
@@ -1170,7 +1170,7 @@ fieldset .filters-name {
   width: 200px;
   height: 40px;
   border: none;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   color: #000000;
   background-color: #eeeeee;
   letter-spacing: 0.15em;
@@ -1203,7 +1203,7 @@ fieldset .filters-name {
 }
 
 .filters-sort h2 {
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1273,11 +1273,29 @@ fieldset .filters-name {
   margin: 0;
 }
 
+.new::after {
+  content: "NEW";
+  position: absolute;
+  top: 29px;
+  right: 27px;
+  width: 30px;
+  height: 16px;
+  padding: 20px 13px;
+  font-size: 14px;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  line-height: 16px;
+  color: rgba(0,0,0,0.2);
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+}
+
 .product-thumbnail {
   padding: 0;
   width: 360;
   height: 380;
 }
+
+
 
 .product-item {
   position: relative;
@@ -1286,6 +1304,7 @@ fieldset .filters-name {
 }
 
 .item-buy {
+  display: none;
   position: absolute;
   width: 300px;
   top: 170px;
@@ -1325,7 +1344,7 @@ fieldset .filters-name {
 
 .item-name {
   font-size: 18px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   text-decoration: none;
   color: #000000;
 }
@@ -1353,7 +1372,7 @@ fieldset .filters-name {
 
 .pagination-list li {
   text-decoration: none;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   color: #000000;
   margin-top: 28px;
   font-size: 16px;
@@ -1436,6 +1455,7 @@ fieldset .filters-name {
 .footer-user-navigation {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -1486,7 +1506,7 @@ fieldset .filters-name {
 
 .footer-logo {
   font-size: 48px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   color: #ffc600;
   line-height: 48px;
   margin-bottom: 57px;
@@ -1552,7 +1572,7 @@ fieldset .filters-name {
 .footer-navigation-links a {
   list-style: none;
   text-decoration: none;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1672,7 +1692,7 @@ fieldset .filters-name {
   display: inline-block;
   vertical-align: baseline;
   width: 360px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
 }
 
@@ -1698,7 +1718,7 @@ fieldset .filters-name {
 
 .form-write-us-letter {
   box-sizing: border-box;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
 }
 
@@ -1735,7 +1755,7 @@ fieldset .filters-name {
 .send-btn {
   padding: 11px 34px 11px 34px;
   border: none;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   background-color: #ffffff;
   color: #000000;
   letter-spacing: 0.20em;
