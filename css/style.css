@@ -1820,6 +1820,10 @@ fieldset .filters-name {
           box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
+.modal-show {
+  display: block;
+}
+
 .form-write-us-name,
 .form-write-us-email {
   display: inline-block;
@@ -1921,7 +1925,9 @@ fieldset .filters-name {
 }
 
 .modal-map-window {
+  display: none;
   position: relative;
+  width: 960px;
 }
 
 .modal-map-close {
