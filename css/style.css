@@ -497,6 +497,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 #btn-1:checked ~ .slider-1,
@@ -1919,17 +1920,11 @@ fieldset .filters-name {
   cursor: pointer;
 }
 
-.modal-close:hover,
-.map-close:hover {
-  opacity: 1;
+.modal-map-window {
+  position: relative;
 }
 
-.modal-close:active,
-.map-close:active {
-  opacity: 0.3;
-}
-
-.map-close {
+.modal-map-close {
   position: absolute;
   top: 22px;
   right: 18px;
@@ -1941,4 +1936,14 @@ fieldset .filters-name {
   background-repeat: no-repeat;
   opacity: 0.5;
   cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-map-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active,
+.modal-map-close:active {
+  opacity: 0.3;
 }
